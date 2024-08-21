@@ -72,8 +72,12 @@ header {
     color: #fff;
 }
 
+.logo {
+    max-width: 50%;
+}
+
 .logo img {
-    width: 60%;
+    width: 25%;
     padding-top: 10px;
 }
 
@@ -223,6 +227,51 @@ header {
     font-family: "Dancing Script", cursive;
     font-size: 2.5rem;
     margin: 1rem 0;
+}
+
+/* SERVICES SECTION */
+.services_section {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_section h3 {
+    font-size: 3rem;
+}
+
+.services_contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0;
+    border: none;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.services_contents span,
+.services_contents p {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.services_contents span {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0.75rem 0;
+}
+
+.services_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_card img {
+    width: 275px;
+    border-radius: 10px;
 }
 
 /* PROJECTS SECTION */
@@ -421,9 +470,17 @@ footer {
     justify-content: center;
 }
 
+.footer_logo img {
+    width: 200px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 992px) {
+
+    .logo {
+        max-width: 100%;
+    }
 
     .navbar .links,
     .navbar .cta_btn {
